@@ -134,7 +134,6 @@ while True:
             print("Jogador 1 vence!")
         else:
             print("Jogador 2 vence!")
-    
     elif escolha == "2":
         print("Saindo do jogo. Até a próxima!")
         break
