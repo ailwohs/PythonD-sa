@@ -139,3 +139,79 @@ while True:
         break
     else:
         print("Opção inválida. Por favor, escolha 1 ou 2.")
+
+
+
+'''Escreva uma função que receba os valores de três lados de um triângulo e o classifique como "Equilátero" (todos os lados iguais), "Isósceles" (dois lados iguais) ou "Escaleno" (todos os lados diferentes).'''
+def classificar_triangulo(lado1, lado2, lado3):
+    if lado1 == lado2 == lado3:
+        return "Equilátero"
+    elif lado1 == lado2 or lado1 == lado3 or lado2 == lado3:
+        return "Isósceles"
+    else:
+        return "Escaleno"
+lado1 = float(input("Digite o valor do lado 1 do triângulo: "))
+lado2 = float(input("Digite o valor do lado 2 do triângulo: "))
+lado3 = float(input("Digite o valor do lado 3 do triângulo: "))
+resultado = classificar_triangulo(lado1, lado2, lado3)
+print("O triângulo é:", resultado)
+
+###
+## Escrever o que eu aprendi no projeto desenvolvido 
+
+'''Escreva uma função que recebe um número inteiro e exibe a tabuada de multiplicação desse número, do 1 ao 10.'''
+def tabuada(numero):
+    for i in range (1, 11):
+        resultado = numero * i
+        print(f"{numero} x {i} = {resultado}")
+numero = int(input("Digite um número inteiro para ver a tabuada: "))
+tabuada(numero)
+print("Aqui está a tabuada do número", numero)
+
+
+'''Você recebeu um dicionário com os nomes dos alunos e suas respectivas notas. Escreva uma função que calcula a média da turma e retorna uma lista com os nomes dos alunos que tiveram nota acima da média.'''
+def alunos_acima_da_media(alunos_notas):
+    media = sum(alunos_notas.values()) / len(alunos_notas)
+    alunos_acima = [aluno for aluno, nota in alunos_notas.items() if nota > media]
+    return alunos_acima
+alunos_notas = {
+    "Alice": 85,
+    "Bob": 78,
+    "Charlie": 92,
+    "Diana": 88,
+    "Eve": 70
+}
+alunos_acima = alunos_acima_da_media(alunos_notas)
+print("Alunos com nota acima da média:", alunos_acima)
+
+'''resultado obtido no curso da DSA'''
+def dsa_alunos_acima_da_media(turma):
+    
+    """
+    Calcula a média da turma e retorna os alunos com nota superior à média.
+    """
+    
+    if not turma:
+        return "Dicionário de turma vazio."
+
+    # Calcula a soma de todas as notas
+    soma_notas = sum(turma.values())
+    
+    # Calcula a média
+    media = soma_notas / len(turma)
+    print(f"A média da turma é: {media:.2f}")
+
+    # Itera sobre o dicionário para encontrar alunos acima da média
+    aprovados = []
+    
+    for aluno, nota in turma.items():
+        if nota > media:
+            aprovados.append(aluno)
+
+    return aprovados
+
+# Dados de exemplo
+notas_turma = {"Ana": 8.5, "Bruno": 6.0, "Carla": 9.5, "Marcelo": 7.0, "Eliane": 5.5}
+
+# Chama a função
+print(f"Alunos acima da média: {dsa_alunos_acima_da_media(notas_turma)}")
