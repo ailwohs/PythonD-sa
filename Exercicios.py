@@ -226,3 +226,4 @@ except ZeroDivisionError:
     print("Não é possível dividir por zero.")
 except ValueError:
     print("Entrada inválida. Por favor, digite um número inteiro.")
+

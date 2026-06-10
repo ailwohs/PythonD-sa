@@ -102,3 +102,4 @@
 >Consolidar conhecimentos através da prática;
 >Servir como material de consulta futura;
 >Compartilhar projetos e exercícios desenvolvidos ao longo do curso.
+

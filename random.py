@@ -2,8 +2,6 @@
     print("nome", nome, "idade", idade)
 apresentacao(20, "Julia")'''
 
-
-
 def meu_decorador(func):
     def wrapper():
         print("Antes da função ser chamada.")
