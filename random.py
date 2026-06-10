@@ -12,3 +12,6 @@ def meu_decorador(func):
 def saudacao():
     print("Olá, mundo!")
 saudacao()  
+
+
+
