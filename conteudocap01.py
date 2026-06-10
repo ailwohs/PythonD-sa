@@ -9,3 +9,5 @@ if media >= 7:
 else:
     print("O aluno foi reprovado.")
 
+# estudar numpy 
+# pesquisar por video também 
