@@ -215,3 +215,14 @@ notas_turma = {"Ana": 8.5, "Bruno": 6.0, "Carla": 9.5, "Marcelo": 7.0, "Eliane":
 
 # Chama a função
 print(f"Alunos acima da média: {dsa_alunos_acima_da_media(notas_turma)}")
+
+
+# testando try/except
+try:
+    numero = int(input("Digite um número: \n"))
+    resultado = 10 / numero
+    print("O resultado é", resultado)
+except ZeroDivisionError:
+    print("Não é possível dividir por zero.")
+except ValueError:
+    print("Entrada inválida. Por favor, digite um número inteiro.")
