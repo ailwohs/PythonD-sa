@@ -11,11 +11,12 @@ else:
 
 # estudar numpy 
 # pesquisar por video também 
-import time
+'''import time
 import os
 import numpy as np
 t0 = time.time()
 desc = precos_np * 0.90    
 final = desc + 5             
 raiz = np.sqrt(precos_np)    
-print("Numpy:", time.time() - t0, "Segundos")
+print("Numpy:", time.time() - t0, "Segundos")'''
+
