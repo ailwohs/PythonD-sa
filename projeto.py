@@ -56,4 +56,4 @@ eixos[1].set_title("Lista B")
 plt.tight_layout()
 plt.show()
 
-    
+
