@@ -287,13 +287,6 @@ if start_button:
             st.error("Confirme as chaves de API e a versão dos pacotes.")
 
 
-# Obrigado DSA
-
-# Este é um mini-projeto bem simples (para os padrões da DSA), mas que didaticamente ajuda a compreender o que são Agentes de IA.
-# Não use este projeto em produção, pois vários controles de segurança devem ser configurados 
-# para que esta app possa ser utilizada por usuários finais. O objetivo aqui é aprendizado.
-
-
 
 
 
