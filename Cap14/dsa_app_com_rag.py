@@ -196,6 +196,25 @@ if btn:
     st.markdown("### Resposta")
     st.write(answer)
 
+def dsa_reset():
+    """Função para resetar o estado do chat e limpar o histórico."""
+    st.session_state.chat_ready = False
+    st.session_state.history = []
+    st.session_state.vectordb_ready = False
+    st.session_state.vectordb = None
+    st.session_state.chroma_dir = tempfile.mkdtemp(prefix = "chroma_rag_")
+    st.success("Chat resetado. Envie um novo PDF para começar.")    
+
+st.button("Resetar Chat", on_click = dsa_reset)
+st.caption("Clique para limpar o histórico e reiniciar o chat. O PDF enviado anteriormente será descartado.")
+wrapper = st.expander("Sobre este Mini-Projeto")
+with wrapper:
+    st.markdown(
+        """
+        
+        """
+    )
+
 
 # Explicação do rag_pipeline:
 
